@@ -1,0 +1,34 @@
+body {
+  font-size: 18px;
+
+  .main {
+    font-size: 16px;
+  }
+}
+
+.logo-css {
+  span {
+    display: inline-block;
+    width: 131px;
+    height: 35px;
+    background-image: url(../asset/logo.png);
+  }
+}
+
+.large-import {
+  img {
+    width: 500px;
+    height: auto;
+  }
+}
+
+.large-css {
+  span {
+    display: inline-block;
+    width: 500px;
+    height: 333px;
+    background-image: url(../asset/large.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+}

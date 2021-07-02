@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Webpack App</title>
+</head>
+
+<body>
+  <div class="container pt-4">
+    <div class="item mb-4">
+      <h1 class="mb-4">1.图片加载</h1>
+      <p><b>1.1 小图</b></p>
+      <p>import</p>
+      <p class="logo-import"><img></p>
+      <p>css</p>
+      <p class="logo-css"><span></span></p>
+      <p>img</p>
+      <p><img src="../public/logo.png" alt=""></p>
+      <p><b>1.2 大图</b></p>
+      <p>import</p>
+      <p class="large-import"><img></p>
+      <p>css</p>
+      <p class="large-css"><span></span></p>
+    </div>
+    <!-- .item -->
+
+    <div class="item mb-4">
+      <h1 class="mb-4">2.datepicker</h1>
+      <div class="form">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="text" class="form-control datepicker" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" id="tj">提交</button>
+      </div>
+      <!-- .form -->
+
+    </div>
+    <!-- .item -->
+
+    <div class="item mb-4">
+      <h1 class="mb-4">3.modal</h1>
+      <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Launch demo modal
+        </button></p>
+
+    </div>
+    <!-- .item -->
+
+    <div class="item mb-4">
+      <h1 class="mb-4">4.sweetalert2</h1>
+      <p><button type="button" class="btn btn-primary" id="sweetalert2">sweetalert2</button></p>
+
+    </div>
+    <!-- .item -->
+
+  </div>
+  <!-- .container -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- .modal -->
+
+</body>
+
+</html>
