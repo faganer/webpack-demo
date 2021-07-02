@@ -55,11 +55,7 @@ const {
 } = setMPA()
 
 module.exports = {
-  mode: 'development',
   entry: entry,
-  cache: {
-    type: 'memory'
-  },
   target: ['web', 'es5'],
   output: {
     filename: '[name].bundle.js',
