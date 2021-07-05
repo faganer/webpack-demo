@@ -69,19 +69,20 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-      _:'lodash',
-      Swal:'sweetalert2/dist/sweetalert2.js'
+      _: 'lodash',
+      Swal: 'sweetalert2/dist/sweetalert2.js'
     }),
     new ESLintPlugin({
-      fix:true
+      fix: true
     }),
     new StylelintPlugin({
-      fix:true
+      fix: true
     }),
     new CopyPlugin({
-      patterns: [
-        { from: path.resolve(__dirname, 'src/public'), to: path.resolve(__dirname, 'dist/public') },
-      ],
+      patterns: [{
+        from: path.resolve(__dirname, 'src/public'),
+        to: path.resolve(__dirname, 'dist/public')
+      }, ],
     }),
   ].concat(htmlWebpackPlugins),
   module: {
@@ -134,8 +135,7 @@ module.exports = {
       // https://webpack.js.org/loaders/less-loader/
       {
         test: /\.less$/i,
-        use: [
-          {
+        use: [{
             loader: 'style-loader',
           },
           MiniCssExtractPlugin.loader,
@@ -196,6 +196,12 @@ module.exports = {
       //     esModule: false,
       //   },
       // },
+
     ]
-  }
+  },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src'),
+    },
+  },
 }
