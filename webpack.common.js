@@ -11,15 +11,11 @@ const setMPA = () => {
   const entry = {}
   const htmlWebpackPlugins = []
 
-  // const entryFiles = glob.sync(path.join(__dirname, './src/*/index.js'));
   const entryFiles = glob.sync(path.join(__dirname, './src/js/*.js'))
   // eslint-disable-next-line lodash/prefer-lodash-method
   Object.keys(entryFiles).map(index => {
     const entryFile = entryFiles[index]
-    // const match = entryFile.match(/src\/(.*)\/index\.js/);
-    // const pageName = match && match[1];
     const pageName = path.basename(entryFile, '.js')
-    // entry[pageName] = entryFile;
     if (pageName !== 'main') {
       entry[pageName] = './src/js/' + path.basename(entryFile)
       const htmlWebpackPlugin = new HtmlWebpackPlugin({
@@ -69,7 +65,7 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-      _: 'lodash',
+      // _: 'lodash',
       Swal: 'sweetalert2/dist/sweetalert2.js'
     }),
     new ESLintPlugin({

@@ -1,3 +1,5 @@
-
 require('./main')
-console.log(_.join(['Another', 'module', 'loaded!'], ' '))
+import {
+  join
+} from 'lodash'
+console.log(join(['Another', 'module', 'loaded!'], ' '))

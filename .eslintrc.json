@@ -13,7 +13,8 @@
     },
     "rules": {
         "quotes": [1, "single"],
-        "semi": [2, "never"]
+        "semi": [2, "never"],
+        "lodash/import-scope": [2, "member"]
     },
     "globals": {
         "_": true,

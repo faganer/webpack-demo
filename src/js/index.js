@@ -1,8 +1,19 @@
 require('./main')
 import '../sass/index.scss'
+import {
+  getUrlParams,
+  phoneNumber
+} from './libs/utils'
 
-const str = _.join(['Hello', 'webpack index.html'], ' ')
-$('.main p').html(str)
+import 'bootstrap-datepicker/dist/js/bootstrap-datepicker'
+import 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js'
+
+import {
+  join
+} from 'lodash'
+
+const str = join(['Hello', 'webpack index.html'], ' ')
+console.log(str)
 const obj = {
   'a': 1,
   'b': 2
@@ -29,3 +40,6 @@ $('#sweetalert2').on('click', function () {
     confirmButtonText: 'Cool'
   })
 })
+
+console.log(getUrlParams())
+console.log(phoneNumber('15528081788'))
