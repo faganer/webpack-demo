@@ -7,6 +7,7 @@ const path = require('path')
 const StylelintPlugin = require('stylelint-webpack-plugin')
 const webpack = require('webpack')
 
+
 const setMPA = () => {
   const entry = {}
   const htmlWebpackPlugins = []

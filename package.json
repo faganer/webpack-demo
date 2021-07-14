@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@squoosh/lib": "^0.3.1",
     "async-validator": "^3.5.2",
     "autoprefixer": "^10.2.6",
     "babel-loader": "^8.2.2",
@@ -20,6 +19,7 @@
     "bootstrap-datepicker": "^1.9.0",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^5.2.6",
+    "currency.js": "^2.0.4",
     "eslint": "^7.29.0",
     "eslint-plugin-html": "^6.1.2",
     "eslint-plugin-lodash": "^7.2.0",
@@ -29,6 +29,7 @@
     "glob": "^7.1.7",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
+    "imagemin": "^7.0.1",
     "jquery": "^3.6.0",
     "less": "^4.1.1",
     "less-loader": "^10.0.0",
@@ -45,5 +46,8 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "list-to-tree": "^2.2.3"
   }
 }
