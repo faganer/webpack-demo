@@ -12,6 +12,9 @@ import {
 import 'bootstrap-datepicker/dist/js/bootstrap-datepicker'
 import 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js'
 
+// bootstrap-plugins
+import 'bootstrap-plugins/dist/js/pagination.min.js'
+
 // image
 import logo from '../asset/logo.png'
 import large from '../asset/large.jpg'
@@ -129,3 +132,14 @@ $('#tree').append(treeMenu)
 // 格式化数字
 console.log(formatNumber('1234567890'))
 console.log(formatNumber(1234567890))
+
+// eslint-disable-next-line no-undef
+new Pagination($('#paginationId'), {
+  length: 100,
+  current: 1,
+  every: 15,
+  mode: 'long',
+  onClick: function (e) {
+    console.log(e.num)
+  }
+})
